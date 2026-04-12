@@ -1,7 +1,7 @@
 #!/bin/bash
 podman build -f Dockerfile -t single-ancilla-block-encoding-env
 
-podman run -dt --rm \
+podman run -dt \
         --device=/dev/kfd \
         --device=/dev/dri \
         --group-add=video \
